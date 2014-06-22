@@ -1,6 +1,9 @@
 recipe = File.open("recipe-data.txt")
 
-id = ARGV[0]
+user = ARGV[0]
+puts "ユーザー名: #{user}"
+
+id = ARGV[1]
 
 recipe.each_with_index do |v, i|
   if id.to_i == i+1
